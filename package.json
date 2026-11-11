@@ -1,0 +1,57 @@
+﻿{
+    "name":  "dsh-plugin-mail-operator",
+    "version":  "0.1.0",
+    "description":  "Operador de correo para DeepSeek Harness: lista y busca correos por IMAP, lee mensajes y envia con confirmacion por SMTP, con lista blanca de destinatarios, read-only y auditoria.",
+    "type":  "module",
+    "license":  "MIT",
+    "author":  "thegabopacheco-sudo",
+    "homepage":  "https://github.com/thegabopacheco-sudo/dsh-plugin-mail-operator#readme",
+    "repository":  {
+                       "type":  "git",
+                       "url":  "git+https://github.com/thegabopacheco-sudo/dsh-plugin-mail-operator.git"
+                   },
+    "bugs":  {
+                 "url":  "https://github.com/thegabopacheco-sudo/dsh-plugin-mail-operator/issues"
+             },
+    "keywords":  [
+                     "deepseek",
+                     "deepseek-harness",
+                     "dsh",
+                     "dsh-plugin",
+                     "mcp",
+                     "mail-operator"
+                 ],
+    "main":  "./dist/server.mjs",
+    "files":  [
+                  "dist/",
+                  "docs/",
+                  "scripts/",
+                  "cordis.patch.yml",
+                  "config.example.json",
+                  "README.md",
+                  "README.en.md",
+                  "CHANGELOG.md",
+                  "LICENSE"
+              ],
+    "scripts":  {
+                    "build:bundle":  "esbuild server.mjs --bundle --platform=node --format=esm --target=node20 --outfile=dist/server.mjs",
+                    "prepack":  "npm run build:bundle",
+                    "postinstall":  "node scripts/postinstall.mjs"
+                },
+    "engines":  {
+                    "node":  "\u003e=20"
+                },
+    "publishConfig":  {
+                          "access":  "public"
+                      },
+    "dsh":  {
+                "bundle":  {
+                               "patch":  "./cordis.patch.yml"
+                           }
+            },
+    "devDependencies":  {
+                            "@modelcontextprotocol/server":  "2.2.0",
+                            "esbuild":  "0.28.2",
+                            "zod":  "4.4.3"
+                        }
+}

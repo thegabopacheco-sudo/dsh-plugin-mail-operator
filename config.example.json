@@ -1,0 +1,21 @@
+{
+  "imap": {
+    "host": "imap.tu-proveedor.com",
+    "port": 993,
+    "secure": true,
+    "user": "tu-correo@dominio.com",
+    "password": "app-password-aqui"
+  },
+  "smtp": {
+    "host": "smtp.tu-proveedor.com",
+    "port": 465,
+    "secure": true,
+    "starttls": false,
+    "user": "tu-correo@dominio.com",
+    "password": "app-password-aqui",
+    "from": "tu-correo@dominio.com"
+  },
+  "allowedRecipients": ["tudominio.com"],
+  "maxMessages": 10,
+  "note": "Usa una app password, no la contraseña principal. Puedes omitir los password y definirlos con DSH_MAIL_IMAP_PASSWORD / DSH_MAIL_SMTP_PASSWORD."
+}
