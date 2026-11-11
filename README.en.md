@@ -2,9 +2,15 @@
 
 Operador de correo para DeepSeek Harness: lista y busca correos por IMAP, lee mensajes y envia con confirmacion por SMTP, con lista blanca de destinatarios, read-only y auditoria.
 
-## Herramientas
+## Tools
 
-Ver `docs/HOW-IT-WORKS.md` para el detalle.
+| Tool | Qué hace |
+|---|---|
+| `status` | Estado |
+| `inbox` | Bandeja de entrada |
+| `search` | Buscar correos |
+| `read` | Leer correo |
+| `send` | Enviar correo |
 
 ## Instalación
 

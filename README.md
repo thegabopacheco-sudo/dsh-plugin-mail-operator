@@ -4,7 +4,13 @@ Operador de correo para DeepSeek Harness: lista y busca correos por IMAP, lee me
 
 ## Herramientas
 
-Ver `docs/COMO-FUNCIONA.md` para el detalle.
+| Tool | Qué hace |
+|---|---|
+| `status` | Estado |
+| `inbox` | Bandeja de entrada |
+| `search` | Buscar correos |
+| `read` | Leer correo |
+| `send` | Enviar correo |
 
 ## Instalación
 

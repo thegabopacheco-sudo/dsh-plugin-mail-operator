@@ -9,6 +9,14 @@ DSH ──MCP stdio──► server.mjs (bundle single-file)
                     └─ lógica local del plugin
 ```
 
+## Herramientas reales
+
+- `status`: Estado
+- `inbox`: Bandeja de entrada
+- `search`: Buscar correos
+- `read`: Leer correo
+- `send`: Enviar correo
+
 ## Seguridad
 
 - Lectura por defecto; acciones con `confirm:true`.
