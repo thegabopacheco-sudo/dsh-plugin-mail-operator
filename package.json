@@ -1,4 +1,4 @@
-﻿{
+{
     "name":  "dsh-plugin-mail-operator",
     "version":  "0.1.0",
     "description":  "Operador de correo para DeepSeek Harness: lista y busca correos por IMAP, lee mensajes y envia con confirmacion por SMTP, con lista blanca de destinatarios, read-only y auditoria.",
